@@ -1,18 +1,22 @@
             - name: Upstream Sync
   # You may pin to the exact commit or the version.
   # uses: aormsby/Fork-Sync-With-Upstream-action@1090e365224fc834e7e1de521c417ded2d6fcb53
+  #added by Chase 240614
+  on:
+  schedule:
+    - cron: '*/15 * * * *' # Run every 15 minutes
   uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
   with:
     # Branch receiving updates from the upstream repo, e.g. => main, master, prod
-    target_sync_branch: 
+    target_sync_branch: main
     # Input for passing secrets.GITHUB_TOKEN when disabling persistent auth in the checkout step
     target_repo_token: 
     # Token for accessing the remote repo through HTTPS authentication
     upstream_repo_access_token: # optional
     # Upstream repository, e.g. => aormsby/Fork-Sync-With-Upstream-action
-    upstream_sync_repo: 
+    upstream_sync_repo: OpenInterpreter/open-interpreter
     # Branch to sync from, e.g. => main, master, dev
-    upstream_sync_branch: 
+    upstream_sync_branch: main
     # Any extra args to pass to `git checkout` on the source branch, e.g. --recurse-submodules :: default = ""
     target_branch_checkout_args: # optional, default is 
     # Args to print the list of new commits from upstream :: default = --pretty=oneline
@@ -33,4 +37,5 @@
     host_domain: # default is github.com
     # Length of time used when fetching shallow repo data, should match how often you perform a sync
     shallow_since: # default is 1 month ago
-          
+    
+    
