@@ -1,4 +1,13 @@
+codestral*
+g2.yaml
+gem*
+oi*
+t1.py
+t2.pyt3.py
+default_chase_backup.yaml
+default.yaml
 llama.log
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

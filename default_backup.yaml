@@ -4,7 +4,7 @@
 llm:
   model: "mistral/codestral-latest"
   temperature: 0
-  api_key: 'Cya19eZaQFOwBpbVzfvAHXG5Cd8yffSn'
+  api_key: 'Your actual API key'
   api_base: 'https://codestral.mistral.ai/v1/chat/completions'
 
 # Computer Settings
