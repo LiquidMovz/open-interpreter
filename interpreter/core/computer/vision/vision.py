@@ -33,7 +33,7 @@ class Vision:
                         "Open Interpreter will use Moondream (tiny vision model) to describe images to the language model. Set `interpreter.llm.vision_renderer = None` to disable this behavior."
                     )
                     print(
-                        "Alternativley, you can use a vision-supporting LLM and set `interpreter.llm.supports_vision = True`."
+                        "Alternatively, you can use a vision-supporting LLM and set `interpreter.llm.supports_vision = True`."
                     )
                 model_id = "vikhyatk/moondream2"
                 revision = "2024-04-02"
@@ -47,7 +47,7 @@ class Vision:
                 )
                 return True
         except ImportError:
-            self.computer.interpreter.display_message(
+            print(
                 "\nTo use local vision, run `pip install 'open-interpreter[local]'`.\n"
             )
             return False
